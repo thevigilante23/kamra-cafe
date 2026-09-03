@@ -44,7 +44,7 @@
 
 
         // SEND TO FLASK
-        fetch("http://127.0.0.1:5000/chats", {
+        fetch("https://kamra-cafe-production.up.railway.app/chats", {
 
             method: "POST",
 
