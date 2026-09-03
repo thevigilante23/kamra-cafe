@@ -1,0 +1,102 @@
+body {
+    background-image: url("../properties/pastabg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: #e8b96d;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+}
+@media (max-width: 600px) {
+    body {
+        background-position: left center;
+        background-size: auto 100vh;
+    }
+}
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+
+
+h1 {
+    font-family: "Bebas Neue";
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 6px;
+    color: #ebb537;
+}
+
+h2 {
+    font-family: "Montserrat" ;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+h3 {
+    color: #8b4513;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p {
+    font-family: "Montserrat" ;
+}
+
+.hero-text {
+    display: inline-block;
+    padding: 10px 40px;
+    border: 8px solid #F2C14E;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.chat-widget {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.chat-button {
+    width: 65px;
+    height: 65px;
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    cursor: pointer;
+}
+
+.chat-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+   
+}
+
+.text-box {
+    color: #d66060;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.menu{
+    border: none;
+    border-radius: 50px;
+
+    padding: 12px 28px;
+
+    
+    
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    background-color: #901a1a;
+    color: #e8b96d;
+
+}
+ 
