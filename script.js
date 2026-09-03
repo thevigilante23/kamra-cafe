@@ -1,6 +1,12 @@
     const button = document.getElementById("chatbutton");
     
-    
+   
+
+    if (button) {
+    button.addEventListener("click", function() {
+        window.location.href = "chats.html";
+    });
+     }
 
    
 
