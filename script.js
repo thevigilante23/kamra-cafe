@@ -8,12 +8,35 @@
     });
      }
 
-   
+    
+    const reservationbutton = document.getElementById("reserve");
+
+if (reservationbutton) {
+    reservationbutton.addEventListener("click", function () {
+        window.location.href = "reservation.html";
+    });
+}
+    const fadeElements = document.querySelectorAll(".fade-in");
+    const observer = new IntersectionObserver((entries)=>{
+        entries.forEach(entry =>{
+
+        
+         if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+
+    });
+    });
+fadeElements.forEach(element => {
+    observer.observe(element);
+});
 
 
     const message = document.getElementById("userInput");
     const sendbutton = document.getElementById("sendButton");
     const usermsg = document.getElementById("chat-box")
+    
+
     if (message) {
     message.addEventListener("keydown", function (event) {
 

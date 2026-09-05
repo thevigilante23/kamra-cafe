@@ -1,5 +1,5 @@
 body {
-    background-image: url("../properties/pastabg.png");
+    background-image: url("../properties/newbg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -21,6 +21,7 @@ body::before {
     inset: 0;
     background: rgba(0, 0, 0, 0.2);
     z-index: -1;
+    pointer-events: none;
 }
 
 
@@ -58,6 +59,8 @@ p {
     position: fixed;
     right: 20px;
     bottom: 20px;
+    z-index: 9999;
+    user-select: none;
 }
 
 .chat-button {
@@ -71,17 +74,20 @@ p {
     justify-content: center;
     padding: 0;
     cursor: pointer;
+    position: relative;
+    z-index: 10000;
 }
 
 .chat-button img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-   
+    pointer-events: none;
+    user-select: none;
 }
 
 .text-box {
-    color: #d66060;
+    color: #940808;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .menu{
@@ -99,4 +105,199 @@ p {
     color: #e8b96d;
 
 }
- 
+.reservation{
+    border: none;
+    border-radius: 50px;
+
+    padding: 12px 28px;
+
+    
+    
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    background-color: #901a1a;
+    color: #e8b96d;
+} 
+h4{
+    margin: left auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+
+}
+.our-story {
+    padding: 150px 20px;
+}
+
+.story-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.story-label {
+    font-size: 14px;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+.story-content h2 {
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+
+.story-content p {
+    font-size: 17px;
+    line-height: 1.9;
+    margin-bottom: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.hashtag {
+    display: inline-block;
+    margin-top: 30px;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+@media (max-width: 600px) {
+
+    .our-story {
+        padding: 100px 20px;
+    }
+
+    .story-content h2 {
+        font-size: 34px;
+    }
+
+    .story-content p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+}
+.kamra1{
+   
+    font-family: "Cormorant Garamond", serif;
+    color: #ebb537;
+    font-size: 200px;
+    font-weight: 600;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    max-width: 600px;
+    display: flex;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+@media (max-width: 600px) {
+
+    body {
+        background-position: center top;
+        background-size: cover;
+        background-attachment: scroll;
+        overflow-x: hidden;
+    }
+
+    .hero-text {
+        width: calc(100% - 30px);
+        padding: 20px 10px;
+        border-width: 4px;
+        margin-top: 30px;
+    }
+
+    h1 {
+        font-size: 48px;
+        letter-spacing: 4px;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    body > p {
+        font-size: 13px;
+        padding: 0 15px;
+    }
+
+    .menu,
+    .reservation {
+        padding: 10px 20px;
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .chat-widget {
+        right: 15px;
+        bottom: 15px;
+    }
+
+    .chat-button {
+        width: 58px;
+        height: 58px;
+    }
+
+    .text-box {
+        font-size: 12px;
+    }
+
+    .our-story {
+        padding: 90px 20px;
+    }
+
+    .story-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .story-label {
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+
+    .story-content h2 {
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 35px;
+    }
+
+    .story-content p {
+        font-size: 15px;
+        line-height: 1.7;
+        margin-bottom: 22px;
+    }
+
+    .kamra1 {
+        font-size: 22px;
+        letter-spacing: 2px;
+        display: inline;
+    }
+
+    .hashtag {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+}
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
