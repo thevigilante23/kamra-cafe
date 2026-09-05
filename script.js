@@ -1,15 +1,22 @@
     const button = document.getElementById("chatbutton");
-    
-   
 
-    if (button) {
-    button.addEventListener("click", function() {
+if (button) {
+    button.addEventListener("click", function () {
         window.location.href = "chats.html";
     });
-     }
+}
 
-    
-    const reservationbutton = document.getElementById("reserve");
+
+const menubutton = document.getElementById("menu");
+
+if (menubutton) {
+    menubutton.addEventListener("click", function () {
+        window.location.href = "menu.html";
+    });
+}
+
+
+const reservationbutton = document.getElementById("reserve");
 
 if (reservationbutton) {
     reservationbutton.addEventListener("click", function () {

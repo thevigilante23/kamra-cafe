@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu — KAMRA Cafe & Eatery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garant:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/menu.css"/>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <a href="index.html" class="back-link" aria-label="Back to home">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M19 12H5M12 19l-7-7 7-7"/>
+      </svg>
+      <span>Home</span>
+    </a>
+    <div class="wordmark">
+      <span class="wordmark-name">KAMRA</span>
+      <span class="wordmark-sub">Cafe &amp; Eatery</span>
+    </div>
+    <a href="reservation.html" class="reserve-btn">Reserve a Table</a>
+  </header>
+
+  <!-- HERO -->
+  <section class="menu-hero">
+    <p class="hero-eyebrow">Crafted with care</p>
+    <h1 class="hero-title">Our Menu</h1>
+    <p class="hero-tagline">Good food. Good coffee. Good company.</p>
+    <div class="hero-rule" aria-hidden="true"></div>
+  </section>
+
+  <!-- CATEGORY NAV -->
+  <nav class="category-nav" aria-label="Menu categories">
+    <div class="category-nav-inner">
+      <button class="cat-btn active" data-target="coffee">Coffee</button>
+      <button class="cat-btn" data-target="tea">Tea</button>
+      <button class="cat-btn" data-target="breakfast">Breakfast</button>
+      <button class="cat-btn" data-target="continental">Continental</button>
+      <button class="cat-btn" data-target="malabar">Malabar</button>
+      <button class="cat-btn" data-target="snacks">Snacks</button>
+      <button class="cat-btn" data-target="desserts">Desserts</button>
+      <button class="cat-btn" data-target="beverages">Beverages</button>
+    </div>
+  </nav>
+
+  <!-- MENU CONTENT -->
+  <main class="menu-main">
+
+    <!-- COFFEE -->
+    <section class="menu-section" id="coffee" data-section="coffee">
+      <div class="section-header">
+        <h2 class="section-title">Coffee</h2>
+        <p class="section-note">All espresso drinks available in decaf on request</p>
+      </div>
+      <div class="menu-list">
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Espresso <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">Single origin shot, dark and precise</p>
+          </div>
+          <span class="item-price">₹120</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Americano <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">Double espresso, hot water, clean and bold</p>
+          </div>
+          <span class="item-price">₹150</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Cappuccino <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">Espresso, steamed milk, smooth velvet foam</p>
+          </div>
+          <span class="item-price">₹180</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Flat White <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">Ristretto, microfoam milk, intense and silky</p>
+          </div>
+          <span class="item-price">₹190</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Café Latte <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">Espresso, steamed whole milk, light foam crown</p>
+          </div>
+          <span class="item-price">₹180</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Cold Brew <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">18-hour slow steeped, served over ice, naturally sweet</p>
+          </div>
+          <span class="item-price">₹220</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Mocha <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">Espresso, dark chocolate, steamed milk, cocoa dust</p>
+          </div>
+          <span class="item-price">₹200</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">KAMRA Signature <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">House blend espresso, salted caramel, oat milk, cinnamon</p>
+          </div>
+          <span class="item-price">₹240</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TEA -->
+    <section class="menu-section hidden" id="tea" data-section="tea">
+      <div class="section-header">
+        <h2 class="section-title">Tea</h2>
+        <p class="section-note">Loose leaf and whole spice</p>
+      </div>
+      <div class="menu-list">
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Masala Chai <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">Whole spices, ginger, cardamom, Assam tea, full cream milk</p>
+          </div>
+          <span class="item-price">₹120</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Kashmiri Kahwa <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">Green tea, saffron, rose petals, crushed almonds</p>
+          </div>
+          <span class="item-price">₹160</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Darjeeling First Flush <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">Light, floral, delicately muscatel — served without milk</p>
+          </div>
+          <span class="item-price">₹150</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Chamomile &amp; Honey <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">Dried chamomile flowers, wildflower honey, lemon</p>
+          </div>
+          <span class="item-price">₹140</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Mint Green Tea <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">Gunpowder green tea, fresh mint, light and refreshing</p>
+          </div>
+          <span class="item-price">₹130</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BREAKFAST -->
+    <section class="menu-section hidden" id="breakfast" data-section="breakfast">
+      <div class="section-header">
+        <h2 class="section-title">Breakfast</h2>
+        <p class="section-note">Served 8 am – 12 noon</p>
+      </div>
+      <div class="menu-list">
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Egg Benedict <span class="non-veg-dot" title="Non-Vegetarian" aria-label="Non-Vegetarian"></span></h3>
+            <p class="item-desc">Poached eggs, sourdough, smoked chicken, hollandaise</p>
+          </div>
+          <span class="item-price">₹380</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Avocado Toast <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">Multigrain toast, smashed avocado, feta, chilli flakes, microgreens</p>
+          </div>
+          <span class="item-price">₹320</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">French Toast <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">Brioche, vanilla custard, berry compote, maple syrup</p>
+          </div>
+          <span class="item-price">₹290</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Full Breakfast Plate <span class="non-veg-dot" title="Non-Vegetarian" aria-label="Non-Vegetarian"></span></h3>
+            <p class="item-desc">Eggs your way, grilled tomato, mushroom, chicken sausage, toast</p>
+          </div>
+          <span class="item-price">₹450</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Granola Bowl <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">House granola, Greek yogurt, seasonal fruit, honey drizzle</p>
+          </div>
+          <span class="item-price">₹260</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Pancake Stack <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">Three buttermilk pancakes, salted butter, warm maple</p>
+          </div>
+          <span class="item-price">₹280</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTINENTAL -->
+    <section class="menu-section hidden" id="continental" data-section="continental">
+      <div class="section-header">
+        <h2 class="section-title">Continental</h2>
+        <p class="section-note">Served all day</p>
+      </div>
+      <div class="menu-list">
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Pasta Arrabbiata <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">Penne, San Marzano tomato, garlic, chilli, fresh basil</p>
+          </div>
+          <span class="item-price">₹350</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Chicken Alfredo <span class="non-veg-dot" title="Non-Vegetarian" aria-label="Non-Vegetarian"></span></h3>
+            <p class="item-desc">Fettuccine, grilled chicken, cream, parmesan, black pepper</p>
+          </div>
+          <span class="item-price">₹420</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Mushroom Risotto <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">Arborio rice, wild mushroom, white wine, truffle oil, parmesan</p>
+          </div>
+          <span class="item-price">₹390</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Club Sandwich <span class="non-veg-dot" title="Non-Vegetarian" aria-label="Non-Vegetarian"></span></h3>
+            <p class="item-desc">Triple decker, chicken, egg, lettuce, tomato, fries</p>
+          </div>
+          <span class="item-price">₹340</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Margherita Pizza <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">10-inch thin crust, San Marzano, mozzarella, fresh basil</p>
+          </div>
+          <span class="item-price">₹380</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Caesar Salad <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">Romaine, house Caesar dressing, croutons, parmesan shavings</p>
+          </div>
+          <span class="item-price">₹280</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MALABAR -->
+    <section class="menu-section hidden" id="malabar" data-section="malabar">
+      <div class="section-header">
+        <h2 class="section-title">Malabar</h2>
+        <p class="section-note">Kerala's coastal pantry, on the plate</p>
+      </div>
+      <div class="menu-list">
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Malabar Parotta &amp; Beef Curry <span class="non-veg-dot" title="Non-Vegetarian" aria-label="Non-Vegetarian"></span></h3>
+            <p class="item-desc">Flaky layered parotta, slow-cooked Kerala beef, coconut gravy</p>
+          </div>
+          <span class="item-price">₹360</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Kallumakkaya Ularthiyathu <span class="non-veg-dot" title="Non-Vegetarian" aria-label="Non-Vegetarian"></span></h3>
+            <p class="item-desc">Mussels stir-fried with coconut, shallots, curry leaf</p>
+          </div>
+          <span class="item-price">₹320</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Puttu &amp; Kadala <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">Steamed rice puttu, black chickpea curry, coconut milk</p>
+          </div>
+          <span class="item-price">₹220</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Fish Moilee <span class="non-veg-dot" title="Non-Vegetarian" aria-label="Non-Vegetarian"></span></h3>
+            <p class="item-desc">Pearl spot in light coconut milk, turmeric, green chilli, appam</p>
+          </div>
+          <span class="item-price">₹420</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Thalassery Dum Biryani <span class="non-veg-dot" title="Non-Vegetarian" aria-label="Non-Vegetarian"></span></h3>
+            <p class="item-desc">Kaima rice, chicken, whole spices, fried onion, raita</p>
+          </div>
+          <span class="item-price">₹480</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Unnakkai <span class="non-veg-dot" title="Non-Vegetarian" aria-label="Non-Vegetarian"></span></h3>
+            <p class="item-desc">Fried plantain dumplings, prawn &amp; coconut filling</p>
+          </div>
+          <span class="item-price">₹240</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SNACKS -->
+    <section class="menu-section hidden" id="snacks" data-section="snacks">
+      <div class="section-header">
+        <h2 class="section-title">Snacks</h2>
+        <p class="section-note">Perfect with a coffee, any hour</p>
+      </div>
+      <div class="menu-list">
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Masala Fries <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">Crispy fries, chaat masala, lime, coriander chutney</p>
+          </div>
+          <span class="item-price">₹180</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Chicken Wings <span class="non-veg-dot" title="Non-Vegetarian" aria-label="Non-Vegetarian"></span></h3>
+            <p class="item-desc">Six crispy wings, smoky chipotle glaze, blue cheese dip</p>
+          </div>
+          <span class="item-price">₹320</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Bruschetta <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">Sourdough, heritage tomato, basil oil, shaved parmesan</p>
+          </div>
+          <span class="item-price">₹220</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Cheese Quesadilla <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">Cheddar, jalapeño, sour cream, salsa</p>
+          </div>
+          <span class="item-price">₹260</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Hummus &amp; Pita <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">House hummus, warm pita, olive oil, za'atar, olives</p>
+          </div>
+          <span class="item-price">₹240</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">KAMRA Charcuterie <span class="non-veg-dot" title="Non-Vegetarian" aria-label="Non-Vegetarian"></span></h3>
+            <p class="item-desc">Chef's selection of cured meats, cheese, fig preserve, crackers</p>
+          </div>
+          <span class="item-price">₹580</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- DESSERTS -->
+    <section class="menu-section hidden" id="desserts" data-section="desserts">
+      <div class="section-header">
+        <h2 class="section-title">Desserts</h2>
+        <p class="section-note">Baked in-house, daily</p>
+      </div>
+      <div class="menu-list">
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Dark Chocolate Fondant <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">Warm bittersweet center, vanilla bean ice cream, cocoa dust</p>
+          </div>
+          <span class="item-price">₹280</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Tiramisu <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">Espresso-soaked ladyfinger, mascarpone, dark chocolate</p>
+          </div>
+          <span class="item-price">₹260</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">New York Cheesecake <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">Dense baked cheesecake, Biscoff crust, blueberry compote</p>
+          </div>
+          <span class="item-price">₹270</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Crème Brûlée <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">Classic vanilla custard, torched sugar crust, fresh berries</p>
+          </div>
+          <span class="item-price">₹290</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Gulab Jamun Ice Cream <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">Two warm jamun, saffron ice cream, rose petal, pistachio</p>
+          </div>
+          <span class="item-price">₹220</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BEVERAGES -->
+    <section class="menu-section hidden" id="beverages" data-section="beverages">
+      <div class="section-header">
+        <h2 class="section-title">Beverages</h2>
+        <p class="section-note">Cold, fresh, house-made</p>
+      </div>
+      <div class="menu-list">
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Watermelon Mint Cooler <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">Fresh watermelon juice, mint, lime, sea salt</p>
+          </div>
+          <span class="item-price">₹180</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Virgin Mojito <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">Lime, mint, sugar, soda, crushed ice</p>
+          </div>
+          <span class="item-price">₹160</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Mango Lassi <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">Alphonso mango, chilled yogurt, cardamom, saffron</p>
+          </div>
+          <span class="item-price">₹190</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Lemonade <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">Fresh-squeezed, house simple syrup, still or sparkling</p>
+          </div>
+          <span class="item-price">₹150</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Cold Coffee <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">Blended espresso, milk, vanilla, crushed ice</p>
+          </div>
+          <span class="item-price">₹200</span>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-info">
+            <h3 class="item-name">Rose Sharbat <span class="veg-dot" title="Vegetarian" aria-label="Vegetarian"></span></h3>
+            <p class="item-desc">House rose syrup, chilled milk, basil seeds, cardamom</p>
+          </div>
+          <span class="item-price">₹170</span>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-wordmark">KAMRA</div>
+    <p class="footer-note">Prices inclusive of all taxes &nbsp;·&nbsp; Menu subject to seasonal change</p>
+    <a href="reservation.html" class="footer-reserve">Reserve a Table</a>
+  </footer>
+
+  <!-- CHAT BUTTON (existing) -->
+  <button id="chatbutton" aria-label="Open chat">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+    </svg>
+  </button>
+
+  <script src="menu.js"></script>
+</body>
+</html>

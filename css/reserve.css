@@ -1,0 +1,61 @@
+body{
+    background-image: url("../properties/newres0.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: #e8b96d;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+
+}
+@media (max-width: 600px) {
+    body {
+        background-position: center;
+        background-size: auto 100vh;
+    }}
+h1{
+    background-color: rgb(52, 4, 14);
+    border: none;
+   
+    border-radius: 50px;
+    background-size: contain;
+    font-family: 'Franklin Gothic Medium';
+    padding: 20px 10px;
+    width: fit-content;
+    margin: 20px auto;
+    
+}
+.reservation-form {
+    width: 90%;
+    max-width: 500px;
+    margin: 30px auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: none;
+    
+}
+.reservation-form input{
+    display: block;
+    width: 300px;
+    margin: auto;
+    border: none;
+    border-radius: 50px;
+}
+.submitbutton {
+    margin-top: 1px;
+    padding: 14px 30px;
+
+    background: #e8b96d;
+    color: rgb(52, 4, 14);
+
+    border: none;
+    border-radius: 30px;
+
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
