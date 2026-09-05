@@ -93,7 +93,7 @@ p {
 .menu{
     border: none;
     border-radius: 50px;
-
+    cursor: pointer;
     padding: 12px 28px;
 
     
@@ -108,7 +108,7 @@ p {
 .reservation{
     border: none;
     border-radius: 50px;
-
+    cursor: pointer;
     padding: 12px 28px;
 
     
